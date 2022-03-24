@@ -13,10 +13,24 @@ console.log(`multiplication - ${multiplication}`);
 console.log(`division - ${division}`);
 
 console.log('-------# 6')
-console.log(1,2,3,4,5)
+let numList1 = '';
+
+for ( i = 1; i <= 5; i++) {
+
+    numList1 = numList1 + i + " ";
+}
+
+console.log(numList1); 
 
 console.log('-------# 7')
-console.log(5,4,3,2,1)
+let numList2 = '';
+
+for ( i = 5; i >= 1; --i) {
+
+    numList2 = numList2 + i + " ";
+}
+
+console.log(numList2); 
 
 console.log('-------# 8')
 
@@ -27,10 +41,10 @@ function getMarkInfo (condition){
        console.log('У вас средний балл')
    }
 }
-getMarkInfo(10)
-getMarkInfo(1)
+getMarkInfo(10);
+getMarkInfo(1);
 
-console.log('-------# 9')
+console.log('-------# 9');
 
 function getDayInfo (position){
     if (position === 0){
@@ -52,17 +66,40 @@ function getDayInfo (position){
     }
  }
 
-getDayInfo(0)
-getDayInfo(1)
-getDayInfo(2)
-getDayInfo(3)
-getDayInfo(4)
-getDayInfo(5)
-getDayInfo(6)
-getDayInfo(7)
+getDayInfo(0);
+getDayInfo(1);
+getDayInfo(2);
+getDayInfo(3);
+getDayInfo(4);
+getDayInfo(5);
+getDayInfo(6);
+getDayInfo(7);
 
 console.log('-------# 10')
 
+let arrayData = ['a', 'b', 'c'];
+arrayData.push(1,2,3);
 
+console.log(arrayData)
+
+console.log('-------# 11')
+
+let number1 = [1,2,3];
+let number2 = [4,5,6];
+let number3 = number1.concat(number2);
+
+console.log(number3)
+
+console.log('-------# 12')
+
+function countNumber (number){
+    let sum = 0;
+    for (i = 1; i <= number; i++){
+        sum = (i*(i+1)/2);
+    }
+    console.log(sum)
+}
+
+countNumber(3)
 
 
